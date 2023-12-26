@@ -1,0 +1,510 @@
+CRITICAL - 2023-12-13 07:24:47 --> Call to a member function getPathname() on null
+in APPPATH\Controllers\MainController.php on line 455.
+ 1 APPPATH\Controllers\MainController.php(445): App\Controllers\MainController->processExcel(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 07:25:07 --> mysqli_sql_exception: Cannot drop table 'minsu_victoria_roster_list_as_of_october_2023' referenced by a foreign key constraint 'fk_encoder_minsu_victoria_roster_list_as_of_october_2023' on table 'encoder'. in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DROP TABLE IF E...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE IF E...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE IF E...')
+#3 C:\laragon\www\backend\app\Controllers\MainController.php(483): CodeIgniter\Database\BaseConnection->query('DROP TABLE IF E...')
+#4 C:\laragon\www\backend\app\Controllers\MainController.php(448): App\Controllers\MainController->replaceTable('minsu_victoria_...', 'CREATE TABLE be...')
+#5 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+#6 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#7 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-12-13 07:41:01 --> mysqli_sql_exception: Cannot drop table 'minsu_victoria_roster_list_as_of_october_2023' referenced by a foreign key constraint 'fk_encoder_minsu_victoria_roster_list_as_of_october_2023' on table 'encoder'. in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DROP TABLE IF E...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE IF E...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE IF E...')
+#3 C:\laragon\www\backend\app\Controllers\MainController.php(486): CodeIgniter\Database\BaseConnection->query('DROP TABLE IF E...')
+#4 C:\laragon\www\backend\app\Controllers\MainController.php(448): App\Controllers\MainController->replaceTable('minsu_victoria_...', 'CREATE TABLE mi...')
+#5 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+#6 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#7 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-12-13 07:41:01 --> mysqli_sql_exception: Table 'minsu_victoria_roster_list_as_of_october_2023' already exists in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE mi...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE mi...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE mi...')
+#3 C:\laragon\www\backend\app\Controllers\MainController.php(489): CodeIgniter\Database\BaseConnection->query('CREATE TABLE mi...')
+#4 C:\laragon\www\backend\app\Controllers\MainController.php(448): App\Controllers\MainController->replaceTable('minsu_victoria_...', 'CREATE TABLE mi...')
+#5 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+#6 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#7 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-12-13 07:41:39 --> mysqli_sql_exception: Cannot drop table 'minsu_victoria_roster_list_as_of_october_2023' referenced by a foreign key constraint 'fk_encoder_minsu_victoria_roster_list_as_of_october_2023' on table 'encoder'. in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DROP TABLE IF E...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE IF E...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE IF E...')
+#3 C:\laragon\www\backend\app\Controllers\MainController.php(486): CodeIgniter\Database\BaseConnection->query('DROP TABLE IF E...')
+#4 C:\laragon\www\backend\app\Controllers\MainController.php(448): App\Controllers\MainController->replaceTable('minsu_victoria_...', 'CREATE TABLE mi...')
+#5 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+#6 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#7 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-12-13 07:41:39 --> mysqli_sql_exception: Table 'minsu_victoria_roster_list_as_of_october_2023' already exists in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE mi...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE mi...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE mi...')
+#3 C:\laragon\www\backend\app\Controllers\MainController.php(489): CodeIgniter\Database\BaseConnection->query('CREATE TABLE mi...')
+#4 C:\laragon\www\backend\app\Controllers\MainController.php(448): App\Controllers\MainController->replaceTable('minsu_victoria_...', 'CREATE TABLE mi...')
+#5 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+#6 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#7 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-12-13 07:42:09 --> mysqli_sql_exception: Cannot drop table 'minsu_victoria_roster_list_as_of_october_2023' referenced by a foreign key constraint 'fk_encoder_minsu_victoria_roster_list_as_of_october_2023' on table 'encoder'. in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DROP TABLE IF E...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE IF E...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE IF E...')
+#3 C:\laragon\www\backend\app\Controllers\MainController.php(483): CodeIgniter\Database\BaseConnection->query('DROP TABLE IF E...')
+#4 C:\laragon\www\backend\app\Controllers\MainController.php(448): App\Controllers\MainController->replaceTable('minsu_victoria_...', 'CREATE TABLE be...')
+#5 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+#6 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#7 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-12-13 07:42:19 --> mysqli_sql_exception: Cannot drop table 'minsu_victoria_roster_list_as_of_october_2023' referenced by a foreign key constraint 'fk_encoder_minsu_victoria_roster_list_as_of_october_2023' on table 'encoder'. in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DROP TABLE IF E...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE IF E...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE IF E...')
+#3 C:\laragon\www\backend\app\Controllers\MainController.php(483): CodeIgniter\Database\BaseConnection->query('DROP TABLE IF E...')
+#4 C:\laragon\www\backend\app\Controllers\MainController.php(448): App\Controllers\MainController->replaceTable('minsu_victoria_...', 'CREATE TABLE be...')
+#5 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+#6 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#7 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-12-13 07:42:19 --> mysqli_sql_exception: Table 'beneficiary' already exists in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE be...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE be...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE be...')
+#3 C:\laragon\www\backend\app\Controllers\MainController.php(486): CodeIgniter\Database\BaseConnection->query('CREATE TABLE be...')
+#4 C:\laragon\www\backend\app\Controllers\MainController.php(448): App\Controllers\MainController->replaceTable('minsu_victoria_...', 'CREATE TABLE be...')
+#5 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+#6 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#7 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-12-13 07:42:51 --> mysqli_sql_exception: Cannot drop table 'minsu_victoria_roster_list_as_of_october_2023' referenced by a foreign key constraint 'fk_encoder_minsu_victoria_roster_list_as_of_october_2023' on table 'encoder'. in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DROP TABLE IF E...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE IF E...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE IF E...')
+#3 C:\laragon\www\backend\app\Controllers\MainController.php(483): CodeIgniter\Database\BaseConnection->query('DROP TABLE IF E...')
+#4 C:\laragon\www\backend\app\Controllers\MainController.php(448): App\Controllers\MainController->replaceTable('minsu_victoria_...', 'CREATE TABLE be...')
+#5 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+#6 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#7 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-12-13 07:42:51 --> mysqli_sql_exception: Table 'beneficiary' already exists in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE be...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE be...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE be...')
+#3 C:\laragon\www\backend\app\Controllers\MainController.php(486): CodeIgniter\Database\BaseConnection->query('CREATE TABLE be...')
+#4 C:\laragon\www\backend\app\Controllers\MainController.php(448): App\Controllers\MainController->replaceTable('minsu_victoria_...', 'CREATE TABLE be...')
+#5 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+#6 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#7 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-12-13 07:43:22 --> mysqli_sql_exception: Cannot drop table 'minsu_victoria_roster_list_as_of_october_2023' referenced by a foreign key constraint 'fk_encoder_minsu_victoria_roster_list_as_of_october_2023' on table 'encoder'. in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DROP TABLE IF E...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE IF E...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE IF E...')
+#3 C:\laragon\www\backend\app\Controllers\MainController.php(483): CodeIgniter\Database\BaseConnection->query('DROP TABLE IF E...')
+#4 C:\laragon\www\backend\app\Controllers\MainController.php(448): App\Controllers\MainController->replaceTable('minsu_victoria_...', 'CREATE TABLE be...')
+#5 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+#6 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#7 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-12-13 07:43:22 --> mysqli_sql_exception: Table 'beneficiary' already exists in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE be...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE be...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE be...')
+#3 C:\laragon\www\backend\app\Controllers\MainController.php(486): CodeIgniter\Database\BaseConnection->query('CREATE TABLE be...')
+#4 C:\laragon\www\backend\app\Controllers\MainController.php(448): App\Controllers\MainController->replaceTable('minsu_victoria_...', 'CREATE TABLE be...')
+#5 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+#6 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#7 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-12-13 08:08:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INT AUTO_INCREMENT PRIMARY KEY, A VARCHAR(255) VALUES ('', 'John Loyd Gutierrez'' at line 1 in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO ben...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO ben...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO ben...')
+#3 C:\laragon\www\backend\app\Controllers\MainController.php(505): CodeIgniter\Database\BaseConnection->query('INSERT INTO ben...')
+#4 C:\laragon\www\backend\app\Controllers\MainController.php(455): App\Controllers\MainController->insertData(Object(CodeIgniter\HTTP\Files\UploadedFile), 'beneficiary', 'id INT AUTO_INC...')
+#5 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+#6 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#7 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-13 08:08:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INT AUTO_INCREMENT PRIMARY KEY, A VARCHAR(255) VALUES ('', 'John Loyd Gutierrez'' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\MainController.php(505): CodeIgniter\Database\BaseConnection->query('INSERT INTO beneficiary (id INT AUTO_INCREMENT PRIMARY KEY, A VARCHAR(255) VALUES (\'\', \'John Loyd Gutierrez\', \'2023-11-26 20:58:46\', \'Shop (John Loyd Gutierrez)\', \'POS/00001\', \'In Progress\')')
+ 2 APPPATH\Controllers\MainController.php(455): App\Controllers\MainController->insertData(Object(CodeIgniter\HTTP\Files\UploadedFile), 'beneficiary', 'id INT AUTO_INCREMENT PRIMARY KEY, A VARCHAR(255')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 08:25:44 --> mysqli_sql_exception: Table 'beneficiary' already exists in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE be...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE be...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE be...')
+#3 C:\laragon\www\backend\app\Controllers\MainController.php(464): CodeIgniter\Database\BaseConnection->query('CREATE TABLE be...')
+#4 C:\laragon\www\backend\app\Controllers\MainController.php(500): App\Controllers\MainController->processExcel(Object(CodeIgniter\HTTP\Files\UploadedFile), 'beneficiary')
+#5 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+#6 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#7 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-13 08:25:44 --> Table 'beneficiary' already exists
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\MainController.php(464): CodeIgniter\Database\BaseConnection->query('CREATE TABLE beneficiary (id INT AUTO_INCREMENT PRIMARY KEY, A VARCHAR(255), B VARCHAR(255), C VARCHAR(255), D VARCHAR(255), E VARCHAR(255), F VARCHAR(255))')
+ 2 APPPATH\Controllers\MainController.php(500): App\Controllers\MainController->processExcel(Object(CodeIgniter\HTTP\Files\UploadedFile), 'beneficiary')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 08:34:46 --> mysqli_sql_exception: Table 'beneficiary' already exists in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE be...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE be...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE be...')
+#3 C:\laragon\www\backend\app\Controllers\MainController.php(464): CodeIgniter\Database\BaseConnection->query('CREATE TABLE be...')
+#4 C:\laragon\www\backend\app\Controllers\MainController.php(516): App\Controllers\MainController->processExcel(Object(CodeIgniter\HTTP\Files\UploadedFile), 'beneficiary')
+#5 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+#6 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#7 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-13 08:34:46 --> Table 'beneficiary' already exists
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\MainController.php(464): CodeIgniter\Database\BaseConnection->query('CREATE TABLE beneficiary (id INT AUTO_INCREMENT PRIMARY KEY, A VARCHAR(255), B VARCHAR(255), C VARCHAR(255), D VARCHAR(255), E VARCHAR(255), F VARCHAR(255))')
+ 2 APPPATH\Controllers\MainController.php(516): App\Controllers\MainController->processExcel(Object(CodeIgniter\HTTP\Files\UploadedFile), 'beneficiary')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 08:41:16 --> mysqli_sql_exception: Table 'beneficiary' already exists in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE be...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE be...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE be...')
+#3 C:\laragon\www\backend\app\Controllers\MainController.php(503): CodeIgniter\Database\BaseConnection->query('CREATE TABLE be...')
+#4 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+#5 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#6 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-13 08:41:17 --> Table 'beneficiary' already exists
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\MainController.php(503): CodeIgniter\Database\BaseConnection->query('CREATE TABLE beneficiary (id INT AUTO_INCREMENT PRIMARY KEY, A VARCHAR(255), B VARCHAR(255), C VARCHAR(255), D VARCHAR(255), E VARCHAR(255), F VARCHAR(255))')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 08:41:49 --> Call to a member function getPathname() on null
+in APPPATH\Controllers\MainController.php on line 442.
+ 1 APPPATH\Controllers\MainController.php(499): App\Controllers\MainController->processExcel(null, 'beneficiary')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 08:43:58 --> mysqli_sql_exception: Unknown column 'G' in 'field list' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO ben...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO ben...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO ben...')
+#3 C:\laragon\www\backend\app\Controllers\MainController.php(490): CodeIgniter\Database\BaseConnection->query('INSERT INTO ben...')
+#4 C:\laragon\www\backend\app\Controllers\MainController.php(502): App\Controllers\MainController->insertData(Object(CodeIgniter\HTTP\Files\UploadedFile), 'beneficiary')
+#5 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+#6 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#7 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-13 08:43:58 --> Unknown column 'G' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\MainController.php(490): CodeIgniter\Database\BaseConnection->query('INSERT INTO beneficiary (A, B, C, D, E, F, G, H) VALUES (\'1\', \'Dulce\', \'Abril\', \'Female\', \'United States\', \'32\', \'15/10/2017\', \'1562\')')
+ 2 APPPATH\Controllers\MainController.php(502): App\Controllers\MainController->insertData(Object(CodeIgniter\HTTP\Files\UploadedFile), 'beneficiary')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 08:50:03 --> mysqli_sql_exception: Unknown column 'A' in 'field list' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO min...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO min...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO min...')
+#3 C:\laragon\www\backend\app\Controllers\MainController.php(490): CodeIgniter\Database\BaseConnection->query('INSERT INTO min...')
+#4 C:\laragon\www\backend\app\Controllers\MainController.php(502): App\Controllers\MainController->insertData(Object(CodeIgniter\HTTP\Files\UploadedFile), 'minsu_victoria_...')
+#5 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+#6 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#7 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-13 08:50:03 --> Unknown column 'A' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\MainController.php(490): CodeIgniter\Database\BaseConnection->query('INSERT INTO minsu_victoria_roster_list_as_of_october_2023 (A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z, AA, AB, AC, AD, AE, AF, AG, AH, AI, AJ, AK) VALUES (\'MIMAROPA\', \'ORIENTAL MINDORO\', \'VICTORIA\', \'SAN NARCISO\', \'175204017-0201-00166\', \'1084788\', \'BERNABE\', \'SENIO\', \'GALIN\', \'\', \'5/11/1951\', \'72\', \'MALE\', \'3 - Graduated Due to Improved Level of Well-Being\', \'1 - Active\', \'Head\', \'NO\', \'YES\', \'1A\', \'NO\', \'\', \'\', \'3 - N/A\', \'\', \'NO\', \'Grade 6\', \'NO\', \'\', \'NO\', \'\', \'\', \'NO\', \'\', \'\', \'\', \'NO\', \'\')')
+ 2 APPPATH\Controllers\MainController.php(502): App\Controllers\MainController->insertData(Object(CodeIgniter\HTTP\Files\UploadedFile), 'minsu_victoria_roster_list_as_of_october_2023')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 08:50:34 --> mysqli_sql_exception: Unknown column 'G' in 'field list' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO ben...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO ben...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO ben...')
+#3 C:\laragon\www\backend\app\Controllers\MainController.php(490): CodeIgniter\Database\BaseConnection->query('INSERT INTO ben...')
+#4 C:\laragon\www\backend\app\Controllers\MainController.php(502): App\Controllers\MainController->insertData(Object(CodeIgniter\HTTP\Files\UploadedFile), 'beneficiary')
+#5 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+#6 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#7 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-13 08:50:34 --> Unknown column 'G' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\MainController.php(490): CodeIgniter\Database\BaseConnection->query('INSERT INTO beneficiary (A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z, AA, AB, AC, AD, AE, AF, AG, AH, AI, AJ, AK) VALUES (\'MIMAROPA\', \'ORIENTAL MINDORO\', \'VICTORIA\', \'SAN NARCISO\', \'175204017-0201-00166\', \'1084788\', \'BERNABE\', \'SENIO\', \'GALIN\', \'\', \'5/11/1951\', \'72\', \'MALE\', \'3 - Graduated Due to Improved Level of Well-Being\', \'1 - Active\', \'Head\', \'NO\', \'YES\', \'1A\', \'NO\', \'\', \'\', \'3 - N/A\', \'\', \'NO\', \'Grade 6\', \'NO\', \'\', \'NO\', \'\', \'\', \'NO\', \'\', \'\', \'\', \'NO\', \'\')')
+ 2 APPPATH\Controllers\MainController.php(502): App\Controllers\MainController->insertData(Object(CodeIgniter\HTTP\Files\UploadedFile), 'beneficiary')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 08:50:49 --> mysqli_sql_exception: Unknown column 'A' in 'field list' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO min...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO min...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO min...')
+#3 C:\laragon\www\backend\app\Controllers\MainController.php(490): CodeIgniter\Database\BaseConnection->query('INSERT INTO min...')
+#4 C:\laragon\www\backend\app\Controllers\MainController.php(502): App\Controllers\MainController->insertData(Object(CodeIgniter\HTTP\Files\UploadedFile), 'minsu_victoria_...')
+#5 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+#6 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#7 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-13 08:50:49 --> Unknown column 'A' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\MainController.php(490): CodeIgniter\Database\BaseConnection->query('INSERT INTO minsu_victoria_roster_list_as_of_october_2023 (A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z, AA, AB, AC, AD, AE, AF, AG, AH, AI, AJ, AK) VALUES (\'MIMAROPA\', \'ORIENTAL MINDORO\', \'VICTORIA\', \'SAN NARCISO\', \'175204017-0201-00166\', \'1084788\', \'BERNABE\', \'SENIO\', \'GALIN\', \'\', \'5/11/1951\', \'72\', \'MALE\', \'3 - Graduated Due to Improved Level of Well-Being\', \'1 - Active\', \'Head\', \'NO\', \'YES\', \'1A\', \'NO\', \'\', \'\', \'3 - N/A\', \'\', \'NO\', \'Grade 6\', \'NO\', \'\', \'NO\', \'\', \'\', \'NO\', \'\', \'\', \'\', \'NO\', \'\')')
+ 2 APPPATH\Controllers\MainController.php(502): App\Controllers\MainController->insertData(Object(CodeIgniter\HTTP\Files\UploadedFile), 'minsu_victoria_roster_list_as_of_october_2023')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 08:50:53 --> Call to a member function getPathname() on null
+in APPPATH\Controllers\MainController.php on line 442.
+ 1 APPPATH\Controllers\MainController.php(499): App\Controllers\MainController->processExcel(null, 'minsu_victoria_roster_list_as_of_october_2023')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 08:52:20 --> mysqli_sql_exception: Unknown column 'G' in 'field list' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO ben...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO ben...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO ben...')
+#3 C:\laragon\www\backend\app\Controllers\MainController.php(490): CodeIgniter\Database\BaseConnection->query('INSERT INTO ben...')
+#4 C:\laragon\www\backend\app\Controllers\MainController.php(502): App\Controllers\MainController->insertData(Object(CodeIgniter\HTTP\Files\UploadedFile), 'beneficiary')
+#5 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+#6 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#7 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-13 08:52:20 --> Unknown column 'G' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\MainController.php(490): CodeIgniter\Database\BaseConnection->query('INSERT INTO beneficiary (A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z, AA, AB, AC, AD, AE, AF, AG, AH, AI, AJ, AK) VALUES (\'MIMAROPA\', \'ORIENTAL MINDORO\', \'VICTORIA\', \'SAN NARCISO\', \'175204017-0201-00166\', \'1084788\', \'BERNABE\', \'SENIO\', \'GALIN\', \'\', \'5/11/1951\', \'72\', \'MALE\', \'3 - Graduated Due to Improved Level of Well-Being\', \'1 - Active\', \'Head\', \'NO\', \'YES\', \'1A\', \'NO\', \'\', \'\', \'3 - N/A\', \'\', \'NO\', \'Grade 6\', \'NO\', \'\', \'NO\', \'\', \'\', \'NO\', \'\', \'\', \'\', \'NO\', \'\')')
+ 2 APPPATH\Controllers\MainController.php(502): App\Controllers\MainController->insertData(Object(CodeIgniter\HTTP\Files\UploadedFile), 'beneficiary')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 08:52:34 --> mysqli_sql_exception: Unknown column 'G' in 'field list' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO ben...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO ben...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO ben...')
+#3 C:\laragon\www\backend\app\Controllers\MainController.php(490): CodeIgniter\Database\BaseConnection->query('INSERT INTO ben...')
+#4 C:\laragon\www\backend\app\Controllers\MainController.php(502): App\Controllers\MainController->insertData(Object(CodeIgniter\HTTP\Files\UploadedFile), 'beneficiary')
+#5 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+#6 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#7 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-13 08:52:34 --> Unknown column 'G' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\MainController.php(490): CodeIgniter\Database\BaseConnection->query('INSERT INTO beneficiary (A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z, AA, AB, AC, AD, AE, AF, AG, AH, AI, AJ, AK) VALUES (\'MIMAROPA\', \'ORIENTAL MINDORO\', \'VICTORIA\', \'SAN NARCISO\', \'175204017-0201-00166\', \'1084788\', \'BERNABE\', \'SENIO\', \'GALIN\', \'\', \'5/11/1951\', \'72\', \'MALE\', \'3 - Graduated Due to Improved Level of Well-Being\', \'1 - Active\', \'Head\', \'NO\', \'YES\', \'1A\', \'NO\', \'\', \'\', \'3 - N/A\', \'\', \'NO\', \'Grade 6\', \'NO\', \'\', \'NO\', \'\', \'\', \'NO\', \'\', \'\', \'\', \'NO\', \'\')')
+ 2 APPPATH\Controllers\MainController.php(502): App\Controllers\MainController->insertData(Object(CodeIgniter\HTTP\Files\UploadedFile), 'beneficiary')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 08:52:49 --> mysqli_sql_exception: Table 'beneficiary' already exists in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE be...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE be...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE be...')
+#3 C:\laragon\www\backend\app\Controllers\MainController.php(464): CodeIgniter\Database\BaseConnection->query('CREATE TABLE be...')
+#4 C:\laragon\www\backend\app\Controllers\MainController.php(500): App\Controllers\MainController->processExcel(Object(CodeIgniter\HTTP\Files\UploadedFile), 'beneficiary')
+#5 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+#6 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#7 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-13 08:52:49 --> Table 'beneficiary' already exists
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\MainController.php(464): CodeIgniter\Database\BaseConnection->query('CREATE TABLE beneficiary (id INT AUTO_INCREMENT PRIMARY KEY, A VARCHAR(255), B VARCHAR(255), C VARCHAR(255), D VARCHAR(255), E VARCHAR(255), F VARCHAR(255), G VARCHAR(255), H VARCHAR(255), I VARCHAR(255), J VARCHAR(255), K VARCHAR(255), L VARCHAR(255), M VARCHAR(255), N VARCHAR(255), O VARCHAR(255), P VARCHAR(255), Q VARCHAR(255), R VARCHAR(255), S VARCHAR(255), T VARCHAR(255), U VARCHAR(255), V VARCHAR(255), W VARCHAR(255), X VARCHAR(255), Y VARCHAR(255), Z VARCHAR(255), AA VARCHAR(255), AB VARCHAR(255), AC VARCHAR(255), AD VARCHAR(255), AE VARCHAR(255), AF VARCHAR(255), AG VARCHAR(255), AH VARCHAR(255), AI VARCHAR(255), AJ VARCHAR(255), AK VARCHAR(255))')
+ 2 APPPATH\Controllers\MainController.php(500): App\Controllers\MainController->processExcel(Object(CodeIgniter\HTTP\Files\UploadedFile), 'beneficiary')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 08:53:24 --> mysqli_sql_exception: Table 'beneficiary' already exists in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE be...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE be...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE be...')
+#3 C:\laragon\www\backend\app\Controllers\MainController.php(464): CodeIgniter\Database\BaseConnection->query('CREATE TABLE be...')
+#4 C:\laragon\www\backend\app\Controllers\MainController.php(500): App\Controllers\MainController->processExcel(Object(CodeIgniter\HTTP\Files\UploadedFile), 'beneficiary')
+#5 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+#6 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#7 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-13 08:53:24 --> Table 'beneficiary' already exists
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\MainController.php(464): CodeIgniter\Database\BaseConnection->query('CREATE TABLE beneficiary (id INT AUTO_INCREMENT PRIMARY KEY, A VARCHAR(255), B VARCHAR(255), C VARCHAR(255), D VARCHAR(255), E VARCHAR(255), F VARCHAR(255))')
+ 2 APPPATH\Controllers\MainController.php(500): App\Controllers\MainController->processExcel(Object(CodeIgniter\HTTP\Files\UploadedFile), 'beneficiary')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 08:53:36 --> mysqli_sql_exception: Table 'beneficiary' already exists in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE be...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE be...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE be...')
+#3 C:\laragon\www\backend\app\Controllers\MainController.php(464): CodeIgniter\Database\BaseConnection->query('CREATE TABLE be...')
+#4 C:\laragon\www\backend\app\Controllers\MainController.php(500): App\Controllers\MainController->processExcel(Object(CodeIgniter\HTTP\Files\UploadedFile), 'beneficiary')
+#5 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+#6 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#7 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-13 08:53:36 --> Table 'beneficiary' already exists
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\MainController.php(464): CodeIgniter\Database\BaseConnection->query('CREATE TABLE beneficiary (id INT AUTO_INCREMENT PRIMARY KEY, A VARCHAR(255), B VARCHAR(255), C VARCHAR(255), D VARCHAR(255), E VARCHAR(255), F VARCHAR(255))')
+ 2 APPPATH\Controllers\MainController.php(500): App\Controllers\MainController->processExcel(Object(CodeIgniter\HTTP\Files\UploadedFile), 'beneficiary')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 08:53:41 --> Call to a member function getPathname() on null
+in APPPATH\Controllers\MainController.php on line 442.
+ 1 APPPATH\Controllers\MainController.php(500): App\Controllers\MainController->processExcel(null, 'beneficiary')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 08:55:01 --> mysqli_sql_exception: Table 'beneficiary' already exists in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE be...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE be...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE be...')
+#3 C:\laragon\www\backend\app\Controllers\MainController.php(464): CodeIgniter\Database\BaseConnection->query('CREATE TABLE be...')
+#4 C:\laragon\www\backend\app\Controllers\MainController.php(500): App\Controllers\MainController->processExcel(Object(CodeIgniter\HTTP\Files\UploadedFile), 'beneficiary')
+#5 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+#6 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#7 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-13 08:55:01 --> Table 'beneficiary' already exists
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\MainController.php(464): CodeIgniter\Database\BaseConnection->query('CREATE TABLE beneficiary (id INT AUTO_INCREMENT PRIMARY KEY, A VARCHAR(255), B VARCHAR(255), C VARCHAR(255), D VARCHAR(255), E VARCHAR(255), F VARCHAR(255))')
+ 2 APPPATH\Controllers\MainController.php(500): App\Controllers\MainController->processExcel(Object(CodeIgniter\HTTP\Files\UploadedFile), 'beneficiary')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 08:55:33 --> mysqli_sql_exception: Table 'beneficiary' already exists in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE be...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE be...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE be...')
+#3 C:\laragon\www\backend\app\Controllers\MainController.php(464): CodeIgniter\Database\BaseConnection->query('CREATE TABLE be...')
+#4 C:\laragon\www\backend\app\Controllers\MainController.php(500): App\Controllers\MainController->processExcel(Object(CodeIgniter\HTTP\Files\UploadedFile), 'beneficiary')
+#5 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+#6 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#7 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-13 08:55:33 --> Table 'beneficiary' already exists
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\MainController.php(464): CodeIgniter\Database\BaseConnection->query('CREATE TABLE beneficiary (id INT AUTO_INCREMENT PRIMARY KEY, A VARCHAR(255), B VARCHAR(255), C VARCHAR(255), D VARCHAR(255), E VARCHAR(255), F VARCHAR(255))')
+ 2 APPPATH\Controllers\MainController.php(500): App\Controllers\MainController->processExcel(Object(CodeIgniter\HTTP\Files\UploadedFile), 'beneficiary')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 09:32:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''id','name','email','password','repassword') VALUES ('', 'John Loyd Gutierrez', ' at line 1 in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO ben...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO ben...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO ben...')
+#3 C:\laragon\www\backend\app\Controllers\MainController.php(464): CodeIgniter\Database\BaseConnection->query('INSERT INTO ben...')
+#4 C:\laragon\www\backend\app\Controllers\MainController.php(504): App\Controllers\MainController->insertData(Object(CodeIgniter\HTTP\Files\UploadedFile), 'beneficiary')
+#5 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+#6 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#7 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-13 09:32:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''id','name','email','password','repassword') VALUES ('', 'John Loyd Gutierrez', ' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\MainController.php(464): CodeIgniter\Database\BaseConnection->query('INSERT INTO beneficiary (\'id\',\'name\',\'email\',\'password\',\'repassword\') VALUES (\'\', \'John Loyd Gutierrez\', \'2023-11-26 20:58:46\', \'Shop (John Loyd Gutierrez)\', \'POS/00001\', \'In Progress\')')
+ 2 APPPATH\Controllers\MainController.php(504): App\Controllers\MainController->insertData(Object(CodeIgniter\HTTP\Files\UploadedFile), 'beneficiary')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 09:33:21 --> mysqli_sql_exception: Unknown column 'name' in 'field list' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO ben...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO ben...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO ben...')
+#3 C:\laragon\www\backend\app\Controllers\MainController.php(464): CodeIgniter\Database\BaseConnection->query('INSERT INTO ben...')
+#4 C:\laragon\www\backend\app\Controllers\MainController.php(504): App\Controllers\MainController->insertData(Object(CodeIgniter\HTTP\Files\UploadedFile), 'beneficiary')
+#5 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+#6 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#7 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-13 09:33:21 --> Unknown column 'name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\MainController.php(464): CodeIgniter\Database\BaseConnection->query('INSERT INTO beneficiary (id,name,email,password,repassword) VALUES (\'\', \'John Loyd Gutierrez\', \'2023-11-26 20:58:46\', \'Shop (John Loyd Gutierrez)\', \'POS/00001\', \'In Progress\')')
+ 2 APPPATH\Controllers\MainController.php(504): App\Controllers\MainController->insertData(Object(CodeIgniter\HTTP\Files\UploadedFile), 'beneficiary')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->uploadFile()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
