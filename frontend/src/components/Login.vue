@@ -41,6 +41,9 @@
                                         <div class="text-center">
                                             <router-link to="register">Create an Account</router-link>
                                         </div>
+                                             <div class="text-center">
+                                            <router-link to="adminLogin">Admin Login</router-link>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
