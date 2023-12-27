@@ -333,7 +333,8 @@
 
         if (response.data) {
         console.log(response.data.message);
-        window.location.reload();
+        // window.location.reload();
+        this.$router.push('/list');
         }
     } catch (error) {
         console.error(error.response.data.error);
