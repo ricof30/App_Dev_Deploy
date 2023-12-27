@@ -24,10 +24,10 @@ import AdminUpdatePass from '../components/Admin_UpdatePass.vue'
 
 
 const routes = [
-  {
-    path: '/',
-    component: HomeView
-  },
+  // {
+  //   path: '/',
+  //   component: HomeView
+  // },
   {
     path: '/forgot',
     component: Forgot
@@ -68,7 +68,7 @@ const routes = [
     component: Register
   },
   {
-    path: '/userdashboard',
+    path: '/',
     component: UserDashboard,
     meta: { requiresAuth: true } 
   },

@@ -46,7 +46,7 @@
           <div class="container">
             <ul class="nav page-navigation">
               <li class="nav-item">
-                <router-link to="userdashboard" class="nav-link" >
+                <router-link to="/" class="nav-link" >
                   <i class="mdi mdi-compass-outline menu-icon"></i>
                   <span class="menu-title">Home Page</span>
                 </router-link>

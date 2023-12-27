@@ -26,10 +26,10 @@ class Database extends Config
      */
     public array $default = [
         'DSN'          => '',
-        'hostname'     => 'localhost',
-        'username'     => 'root',
-        'password'     => '',
-        'database'     => 'dswd',
+        'hostname'     => 'dwsd-victoria.online',
+        'username'     => 'u602620830_dswd',
+        'password'     => 'Ricof#30',
+        'database'     => 'u602620830_dswd',
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',
         'pConnect'     => false,

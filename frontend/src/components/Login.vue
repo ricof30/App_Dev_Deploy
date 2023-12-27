@@ -102,7 +102,7 @@
         .then((response) => {
           if (response.data.message === 'Login successful') {
             // console.log(response.data.message)
-            this.$router.push('/userdashboard');
+            this.$router.push('/');
             localStorage.setItem('name', response.data.name);
             localStorage.setItem('token', response.data.token);
           

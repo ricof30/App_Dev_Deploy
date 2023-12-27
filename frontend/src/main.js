@@ -7,7 +7,7 @@ import axios from 'axios'
 import store from './store';
 
 
-axios.defaults.baseURL="http://backend.test/"
+axios.defaults.baseURL="https://dwsd-victoria.online/backend/"
 
 
 loadFonts()
